@@ -14,12 +14,15 @@ package com.xpinjection.patterns.chain.canonical;
  * @version 1.0
  */
 public class AuthRequestHandler extends AbstractRequestHandler {
+	
     private static final ThreadLocal<Long> currentUser = new ThreadLocal<>();
 
+    // конструктор
     public AuthRequestHandler(RequestHandler next) {
         super(next);
     }
 
+    // выполняемая работа
     @Override
     public void handleRequest(Request request) {
         currentUser.set(request.getUserId());

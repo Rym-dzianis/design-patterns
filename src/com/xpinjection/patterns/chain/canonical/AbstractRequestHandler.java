@@ -14,12 +14,15 @@ package com.xpinjection.patterns.chain.canonical;
  * @version 1.0
  */
 public abstract class AbstractRequestHandler implements RequestHandler {
+	
     private final RequestHandler next;
 
+    // конструкор по умолчанию
     public AbstractRequestHandler(RequestHandler next) {
         this.next = next;
     }
 
+    // реализация для всех потомков
     protected void passToTheNext(Request request) {
         if (next != null) {
             next.handleRequest(request);

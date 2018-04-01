@@ -14,5 +14,6 @@ package com.xpinjection.patterns.chain.canonical;
  * @version 1.0
  */
 public interface RequestHandler {
+	
     void handleRequest(Request request);
 }

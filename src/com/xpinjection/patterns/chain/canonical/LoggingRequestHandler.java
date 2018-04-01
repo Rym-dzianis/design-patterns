@@ -14,10 +14,13 @@ package com.xpinjection.patterns.chain.canonical;
  * @version 1.0
  */
 public class LoggingRequestHandler extends AbstractRequestHandler {
+	
+	// конструктор
     public LoggingRequestHandler(RequestHandler next) {
         super(next);
     }
 
+    // выполняемая работа
     @Override
     public void handleRequest(Request request) {
         System.out.println("Request arrived: " + request);

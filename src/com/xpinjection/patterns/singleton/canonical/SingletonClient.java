@@ -1,6 +1,6 @@
 // ============================================================================
 //  File          : SingletonClient
-//  Created       : 13.09.2015   
+//  Created       : 13.09.2015
 //  Description   :
 //  Modifications :
 //
