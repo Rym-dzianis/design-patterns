@@ -2,8 +2,6 @@ package com.dzianis.patterns.observer.eventSubscription.editor;
 
 import java.io.File;
 
-import com.dzianis.patterns.observer.eventSubscription.EventManager;
-
 public class Editor {
     public EventManager events;
     private File file;

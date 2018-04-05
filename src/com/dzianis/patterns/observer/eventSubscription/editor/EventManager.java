@@ -1,4 +1,4 @@
-package com.dzianis.patterns.observer.eventSubscription;
+package com.dzianis.patterns.observer.eventSubscription.editor;
 
 import java.io.File;
 import java.util.ArrayList;
