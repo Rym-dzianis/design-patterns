@@ -27,9 +27,9 @@ public class Editor {
 		System.out.println(this.text + " " + this.curX + " " + this.curY   + " " + this.selectionWidth);
 	}
 	
-	public class Snapshot {
-		private Editor editor;
-	    private String text, curX, curY, selectionWidth;
+	public final class Snapshot {
+		private final Editor editor;
+	    private final String text, curX, curY, selectionWidth;
 	    
 		public Snapshot(Editor editor, String text, String curX, String curY, String selectionWidth) {
 			this.editor = editor;
