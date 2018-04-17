@@ -17,8 +17,39 @@ package com.dzianis.patterns.GRASP.InformationExpert;
 public class Demo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		incorrect();
 
+		correct();
 	}
 
+	
+	private static void incorrect(){
+		Order order = prepareOrder();
+		
+		int price = 0;
+		for(Item item: order.items){
+			price = price +item.price;
+			
+			// getDiscountPrice...
+		}
+		
+		System.out.println(price);
+	}
+	
+	private static void correct(){
+		Order order = prepareOrder();
+		
+		System.out.println(order.getPrice());
+	}
+	
+	private static Order prepareOrder(){
+		Order order = new Order();
+		
+		order.items.add(new Item(5));
+		order.items.add(new Item(5));
+		order.items.add(new Item(5));
+		
+		return order;
+	}
 }
